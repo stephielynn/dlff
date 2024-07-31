@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Patua+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 300;
+    color: #262626;
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a6070;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.logo{
+    text-decoration: none;
+    color: #262626;
+}
+
+header {
+    margin: 0;
+    align-items: center;
+    min-height: 100px;
+    padding: 20px 6%;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.main-nav{
+    list-style: none;
+}
+
+.main-nav a {
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+.container{
+    flex-direction: column;
+}
+
+.container h3 {
+    font-size: 42px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container.darkbg{
+    background: #c5e0ff;
+}
+
+.two-col{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.mini-container{
+    max-width: 600px;
+    align-self: center;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, .big-text, .logo {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 20px;
+    line-height: 60px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.float-left{
+    float: left;
+    margin-right: 100px;
+}
+
+.hero.home h2, .cta h2, .hidden{
+    display: none;
+}
+
+.button, form input[type=submit], form input[type=reset] {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 14px 24px;
+    letter-spacing: 0.15rem;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    width: auto;
+    border: 0;
+}
+
+.button:hover, form input[type=submit]:hover, form input[type=reset]:hover{
+    text-decoration: underline;
+}
+
+.button.primary, form input[type=submit]{
+    background-color: #ffbd20;
+}
+
+.button.primary:hover, form input[type=reset]{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.button.secondary:hover {
+    color: #fff;
+}
+
+section {
+    padding: 100px 6%;
+    display: flex;
+}
+
+
+.hero.bg-img::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url('images/hero-bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.hero{
+    background-color: #1f698b85;
+    font-size: 62px;
+    color: #fff;
+    position:relative;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+}
+
+.hero .big-text .styled{
+    text-decoration-line:  underline;
+    text-decoration-style: wavy;
+    text-decoration-color:  #ffbd20;
+}
+
+.hero.title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1f698b;
+}
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.programs div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.programs img {
+    max-width: 100%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    background-color: #2ca2bd;
+    color: #fff;
+    justify-content: left;
+}
+
+.cta .callout{
+    font-size: 36px;
+}
+
+.cta .buttons{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.cta .button{
+    display: inline-block;
+}
+
+.partner {
+    flex-direction: column;
+}
+
+form ul {
+    padding: 0;
+}
+
+form li {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+form, form label {
+    font-size: 22px;
+}
+
+form legend {
+    font-weight: 700
+}
+
+.form-buttons {
+    margin-top: 20px;
+}
+
+form h3, fieldset fieldset {
+    margin-top: 50px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    border-top: 1px solid #57b1dc;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    background-color: #1f688b;
+    padding: 75px 6%;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .info{
+    flex-grow: 1;
+}
+
+footer .info .logo{
+    text-wrap: nowrap;
+    line-height: 50px;
+    font-size: 18px;
+    width: auto;
+}
+
+footer .info .logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer .social-copyright{
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+footer .icon{
+    height: 30px;
+    width: 30px;
+}
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+	}
+
+    .main-nav{
+        text-align: end;
+    }
+    h1{
+        font-size:24px;
+        text-align: left;
+    }
+    header, footer{
+        padding: 50px 10%;
+    }
+
+    .two-col{
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .two-col.even div{
+        flex-grow: 1;
+        align-self: flex-start;
+    }
+
+    section{
+        padding: 150px 10%;
+    }
+
+    .hero, .cta{
+        align-items: flex-start;
+    }
+
+    .cta .buttons{
+        text-align: left;
+    }
+
+    .programs{
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 75px 10%;
+    }
+
+    footer .info{
+        justify-content: left;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    footer .social-copyright{
+        justify-content: end;
+        text-align: end;
+        align-items: flex-end;
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 1025px) {
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    footer .info .logo{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .header {
+        flex-direction: row;
+		justify-content: space-between;
+    }        
+
+    h1{
+        font-size:30px;
+    }
+
+    .hero.home{
+        min-height: 375px;
+    }
+
+    .hero{
+        font-size: 92px;
+        align-items: center;
+    }
+
+    .cta .callout{
+        font-size: 52px;
+    }
+}
